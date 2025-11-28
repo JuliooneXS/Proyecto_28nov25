@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Proyecto Grafos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <hr>
@@ -10,29 +11,30 @@
     <h2>1. Grafo</h2>
     <p>Definir si es Dirigido/No Dirigido y Ponderado/No Ponderado.</p>
     <p>Zona para cargar datos de Vértices y Aristas.</p>
-    <button type="button">Cargar</button>
+    <button type="button" id="btn-cargar">Cargar</button>
 
     <hr>
 
     <h2>2. Algoritmo</h2>
     <p>Seleccionar Algoritmo:</p>
-    <select>
-        <option>Algoritmo 1</option>
-        <option>Algoritmo 2</option>
-        <option>Algoritmo 3</option>
+    <select id="select-algoritmo">
+        <option value="1">Algoritmo 1</option>
+        <option value="2">Algoritmo 2</option>
+        <option value="3">Algoritmo 3</option>
     </select>
-    <button type="button">Ejecutar</button>
+    <button type="button" id="btn-ejecutar">Ejecutar</button>
 
     <hr>
 
     <h2>3. Resultado</h2>
-    <pre>
+    <pre id="resultado">
     Resultado final
     </pre>
     
     <h3>Análisis</h3>
-    <p>Tiempo: O(f(n))</p>
-    <p>Espacio: O(g(n))</p>
+    <p>Tiempo: <span id="tiempo-analisis">O(f(n))</span></p>
+    <p>Espacio: <span id="espacio-analisis">O(g(n))</span></p>
 
+    <script src="main.js"></script>
 </body>
 </html>
