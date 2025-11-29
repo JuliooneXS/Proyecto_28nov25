@@ -26,15 +26,14 @@ btnCargar.addEventListener('click', () => {
 });
 
 btnEjecutar.addEventListener('click', () => {
-    console.log("Ejecutando algoritmo...");
+    const opcion = document.getElementById("select-algoritmo").value;
     
-});
-
-btnBipartito.addEventListener('click', () => {
-    if (typeof ejecutarBipartito === "function") {
-        ejecutarBipartito();
-    } else {
-        alert("No se encontró bipartito.js");
+    if (opcion === "1") {
+        if (typeof ejecutarBFS === "function") {
+            ejecutarBFS();
+        } else {
+            alert("No se encontró la función ejecutarBFS");
+        }
     }
 });
 
